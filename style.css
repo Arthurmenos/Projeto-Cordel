@@ -20,10 +20,16 @@ header > h1 {
 header > p {
     color: white;
     text-align: center;
+    font-size: 1vw;
 }
 
 header > p > a {
     text-decoration: none;
+    color: white;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
     color: white;
 }
 
@@ -91,5 +97,8 @@ section > p {
     text-decoration: none;
     color: white;
     font-weight: bold;
+  }
 
+  footer > p > a:hover {
+    text-decoration: underline;
   }
