@@ -4,11 +4,27 @@
     font-family: 'Sriracha';
     src: url('fonts/Sriracha-Regular.ttf') format('truetype');
   }
-  
+ 
+@font-face {
+    font-family: 'PassionOne';
+    src: url('fonts/PassionOne-Regular.ttf') format('truetype');
+}  
+
+@font-face {
+    font-family: 'PassionOneBold';
+    src: url('fonts/PassionOne-Bold.ttf') format('truetype');
+}
+
+:root {
+    --font1: 'Sriracha';
+    --font2: "PassionOne";
+    --font3: "PassionOneBold";
+}
+
 
 * {
-  margin: 0px;  
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px; 
+  padding: 0px;
 }
 
 header {
@@ -16,18 +32,22 @@ header {
     background-color: #000000;
     text-align: center;
     padding: 5vh 0vh 5vh 0vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.75vw;
 }
 
 header > h1 {
     color: white;
     text-align: center;
-    font-size: 7vw;
+    font-size: 10vw;
+    font-family: var(--font3);
+    font-variant: small-caps;
+
 }
 
 header > p {
     color: white;
     text-align: center;
-    font-size: 1vw;
 }
 
 header > p > a {
@@ -42,20 +62,18 @@ header > p > a:hover {
 
 main {
     text-align: left;
-    font-size: 5.5vw;
+    font-size: 3.7vw;
 }
 
 section {
-    width: 100%;
-    padding: 20vh 0px 20vh 0px;
+    padding: 10vh 0vh 15vh 0vh;
     position: relative;
+    font-family: var(--font1);
 }
 
 section > p {
     margin: 30px 0px 30px 50px;
 }
-
-
 
 #a1 {
     background-color: white;
@@ -84,14 +102,27 @@ section > p {
     background-attachment: fixed;
 }
 
+
 #a5 {
     background-color: white;
     background-size: cover;
 }
 
+.fundo {
+    max-width: max-content;
+    color: white;
+    background-color: #00000079;
+    margin-left: 3vh;
+}
+
+.fundo > p {
+    margin-left: 0.8vh;
+    margin-right: 0.8vh;
+}
 
   footer {
     font-size: 0.9vw;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     background-color: #000000;
     color: white;
